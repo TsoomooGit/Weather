@@ -1,0 +1,56 @@
+.navbar{
+color: white;
+}
+
+h1{
+    text-align: center !important;
+    margin-left: 35%;
+}
+
+#search{
+    margin: 0px !important;
+}
+
+#container{
+margin: 30px 60px !important;
+}
+.input-group {
+    position: fixed;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    width: 250px !important;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    margin: 10px 15px;
+}
+.list-group-item{
+    border-top-width: 0;
+    width: 250px;
+}
+#text {
+    margin: -37px 250px;
+    padding: 100px 457px;
+}
+#row1, #row2 {
+    margin: 30px 0px !important;
+    height: 300px;
+    border: 1px solid #e2e1e1;
+    margin: 0px 60px;
+    background-color: white;
+    line-height: 3;
+}
+
+.list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
