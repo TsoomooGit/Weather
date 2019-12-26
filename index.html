@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,40 +18,63 @@
               <h5>Search for a City:</h5>
               <div class="row">
                 <div id="search" class="col-md-10">
-              <input id="inputBox" type="text" class="form-control"></input> </div>
+              <input id="inputBox" type="text" class="form-control"></input> 
+            <div id="error"></div></div>
               <div class="col-md-1">
               <button id="searchButton" class="btn btn-primary"><i class="fa fa-search" class="input-group-append"></i></button></div>
             </div>
-              <ul class="list-group" >
+              <ul class="list-group">
                 </ul>
             </div>
-              <!-- <span  class="input-group-append" id="text"></span> -->
+            
         </div>
-       
-        
-                <!-- <div class="form-group" >
-                        <textarea  class="form-control" id="exampleFormControlTextarea1" class="input-group-append" rows="3"></textarea>
-                      </div> -->
-         
-                    <div class="col-md-8">
-                        <div class="row" id="row1">
+                    <div class="col-md-7" id="col1">
+                      <div id="row1">
+                        
                         <h4 id="cityDate"></h4>
-                       <br>
+                        <img id="icon" src="">
                         <div id="temperature"></div>
-                        <br>
+                     
                         <div id="humidity"></div>
-                        <br>
+                      
                         <div id="wind-speed"></div>
                         <div id="uv-index"></div>
-                    </div>
-                            <!-- <div class="row" id="row2">
-                            <h4 id="cityDate"></h4>
+                      </div>
+                     <h3>5-Day Forecast:</h3> 
+                            <div class="row" id="row2">
+                            <div class="col-md-2 rounded">
+                             <div class="date0"></div>
+                             <img class="icon0" src="" >
+                             <div class="temp0"></div>
+                             <div class="humidity0"></div>
                             </div>
-                            <div id="temperature"></div>
-                            <div id="humidity"></div>
-                            <div id="wind-speed"></div>
-                            <div id="uv-index"></div> -->
+                            <div class="col-md-2 rounded">
+                                <div class="date1"></div>
+                                <img class="icon1" src="" >
+                                <div class="temp1"></div>
+                                <div class="humidity1"></div>
+                            </div>
+                            <div class="col-md-2 rounded">
+                                <div class="date2"></div>
+                                <img class="icon2" src="" >
+                                <div class="temp2"></div>
+                                <div class="humidity2"></div>
+                            </div>
+                            <div class="col-md-2 rounded">
+                                <div class="date3"></div>
+                                <img class="icon3" src="" >
+                                <div class="temp3"></div>
+                                <div class="humidity3"></div>
+                            </div>
+                            <div class="col-md-2 rounded">
+                                <div class="date4"></div>
+                                <img class="icon4" src="" >
+                                <div class="temp4"></div>
+                                <div class="humidity4"></div>
+                            </div>
                         </div>
+
+                      </div>
     </div>
 
 </div>
@@ -64,12 +88,5 @@
               <script src="script.js"></script>
       
 </body>
-
-
-
-
-
-
-
 
 </html>
