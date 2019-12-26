@@ -26,7 +26,6 @@ $("#searchButton").on("click", function(){
   var cityName="";
   event.preventDefault();
     cityName=$("#inputBox").val();
-    
    setTemperature(cityName);
 })
 
@@ -57,7 +56,7 @@ $.ajax({
 }).then(function(response) {
  currentName=response.name;
  cityAndDate.innerHTML=currentName+","+response.sys.country+" ("+currentDate+")";
-  temperature.innerHTML="Temperature: "+response.main.temp+" °F"
+  temperature.innerHTML="Temperature: "+response.main.temp+" °F";
   humidity.innerHTML="Humidity: "+response.main.humidity+"%";
   windSpeed.innerHTML="Wind speed: "+response.wind.speed+" MPH";
   var iconCode=response.weather[0].icon;
@@ -90,9 +89,9 @@ $.ajax({
  iconCode=response.list[i].weather[0].icon;
  d.setDate(d.getDate()+1);
  $(".date"+i).text(d.toLocaleDateString());
- $(".icon"+i).attr("src","http://openweathermap.org/img/w/"+iconCode+".png")
+ $(".icon"+i).attr("src","http://openweathermap.org/img/w/"+iconCode+".png");
  $(".temp"+i).text("Temp: "+response.list[i].main.temp+" °F");
- $(".humidity"+i).text("Humidity: "+response.list[i].main.humidity+"%")
+ $(".humidity"+i).text("Humidity: "+response.list[i].main.humidity+"%");
  }
 })
  
